@@ -340,4 +340,19 @@ if (tagRow) {
   $('chatClose')?.addEventListener('click', () => $('chatPanel')?.classList.remove('open'));
   document.querySelectorAll('[data-chat]').forEach(button => button.addEventListener('click', () => { const text = button.dataset.chat; addChatMessage(text, 'user'); addChatMessage(replyTo(text), 'bot'); }));
   $('chatForm')?.addEventListener('submit', e => { e.preventDefault(); const input = $('chatInput'); const text = input?.value.trim(); if (!text) return; addChatMessage(text, 'user'); addChatMessage(replyTo(text), 'bot'); input.value = ''; });
+// Đồng bộ dấu chấm với ảnh tự động trượt
+const galleryTrack = document.querySelector('.custom-gallery-track');
+const galleryDots = [...document.querySelectorAll('.custom-gallery-dots span')];
+
+if (galleryTrack && galleryDots.length) {
+  let currentDot = 0;
+
+  setInterval(() => {
+    currentDot = (currentDot + 1) % galleryDots.length;
+
+    galleryDots.forEach((dot, index) => {
+      dot.classList.toggle('active', index === currentDot);
+    });
+  }, 4000);
+}
 })();
