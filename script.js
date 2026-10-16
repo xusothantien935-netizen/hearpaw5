@@ -115,7 +115,11 @@
   function updateCustomChoices() {
     const location = document.querySelector('input[name="engravingLocation"]:checked')?.value || 'Khắc lên vòng';
     document.querySelectorAll('input[name="tagShape"]').forEach(input => { input.disabled = location !== 'Khắc lên thẻ'; });
-    const tagRow = $('tagPriceRow'); if (tagRow) tagRow.hidden = location !== 'Khắc lên thẻ';
+    const tagRow = $('tagPriceRow');
+if (tagRow) {
+  tagRow.hidden = location !== 'Khắc lên thẻ';
+  tagRow.style.display = location === 'Khắc lên thẻ' ? '' : 'none';
+}
     if ($('tagRequirement')) $('tagRequirement').textContent = location === 'Khắc lên thẻ' ? 'Bạn đã chọn khắc lên thẻ: thẻ tên sẽ được tính thêm 69.000đ vào đơn hàng.' : 'Đang chọn khắc lên vòng cổ — không cần mua thẻ tên.';
     if ($('customTotal')) $('customTotal').textContent = money(1748000 + (location === 'Khắc lên thẻ' ? customTagPrice : 0));
   }
