@@ -226,3 +226,58 @@ html{scroll-behavior:smooth;scroll-padding-top:100px}body{background:#fffefa;col
     gap: 8px;
   }
 }
+.custom-gallery-slider {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 14px;
+}
+
+.custom-gallery-track {
+  display: flex;
+  width: 100%;
+  animation: hearpawSlide 12s infinite;
+}
+
+.custom-gallery-track img {
+  flex: 0 0 100%;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
+}
+
+@keyframes hearpawSlide {
+  0%, 27% {
+    transform: translateX(0);
+  }
+
+  33%, 60% {
+    transform: translateX(-100%);
+  }
+
+  66%, 93% {
+    transform: translateX(-200%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.custom-gallery-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin: 14px 0 20px;
+}
+
+.custom-gallery-dots span {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #d4d8ce;
+}
+
+.custom-gallery-dots span.active {
+  background: #42684a;
+}
