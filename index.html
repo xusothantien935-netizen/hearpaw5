@@ -141,9 +141,33 @@
 </button>
           </div>
           <label for="engraving">Nội dung ghi chú</label><input id="engraving" type="text" maxlength="30" placeholder="Ví dụ: Số điện thoại liên hệ" />
-          <label>Chọn kiểu thẻ khắc tên</label>
-          <div class="custom-choice-grid"><label class="custom-choice"><input type="radio" name="tagShape" value="Hình xương" checked><span>Thẻ hình xương</span></label><label class="custom-choice"><input type="radio" name="tagShape" value="Hình tròn"><span>Thẻ hình tròn</span></label></div>
-          <label>Vị trí khắc tên</label><div class="custom-choice-grid engraving-options"><label class="custom-choice"><input type="radio" name="engravingLocation" value="Khắc lên vòng" checked><span>Khắc lên vòng cổ</span><small>Không cần mua thẻ tên</small></label><label class="custom-choice"><input type="radio" name="engravingLocation" value="Khắc lên thẻ"><span>Khắc lên thẻ</span><small>Cần mua thêm thẻ tên (+69.000đ)</small></label></div>
+         <label>Vị trí khắc tên</label>
+<div class="custom-choice-grid engraving-options">
+  <label class="custom-choice">
+    <input type="radio" name="engravingLocation" value="Khắc lên vòng" checked>
+    <span>Khắc lên vòng cổ</span>
+    <small>Không cần mua thẻ tên</small>
+  </label>
+
+  <label class="custom-choice">
+    <input type="radio" name="engravingLocation" value="Khắc lên thẻ">
+    <span>Khắc lên thẻ</span>
+    <small>Cần mua thêm thẻ tên (+69.000đ)</small>
+  </label>
+</div>
+
+<label>Chọn kiểu thẻ khắc tên</label>
+<div class="custom-choice-grid">
+  <label class="custom-choice">
+    <input type="radio" name="tagShape" value="Hình xương" checked>
+    <span>Thẻ hình xương</span>
+  </label>
+
+  <label class="custom-choice">
+    <input type="radio" name="tagShape" value="Hình tròn">
+    <span>Thẻ hình tròn</span>
+  </label>
+</div>
           <label>Chọn họa tiết dây</label><div class="pattern-options"><label class="pattern-choice"><input type="radio" name="collarPattern" value="Xương cá" checked><img src="assets/pattern-fishbone.png" alt="Họa tiết xương cá"><span>Xương cá</span></label><label class="pattern-choice"><input type="radio" name="collarPattern" value="Hình xương"><img src="assets/pattern-bone.png" alt="Họa tiết hình xương"><span>Hình xương</span></label><label class="pattern-choice"><input type="radio" name="collarPattern" value="Cổ điển"><img src="assets/pattern-classic.png" alt="Họa tiết cổ điển"><span>Cổ điển</span></label></div><p class="fine-print" id="tagRequirement">Đang chọn khắc lên vòng cổ — không cần mua thẻ tên.</p>
           <label for="customSize">Kích cỡ vòng cổ</label><select id="customSize"><option value="S">S — 25–35 cm</option><option value="M" selected>M — 35–48 cm</option><option value="L">L — 48–65 cm</option></select>
           <div class="price-breakdown"><div><span>Vòng cổ GPS 4G tiêu chuẩn</span><b>1.599.000đ</b></div><div><span>Cá nhân hóa dây đeo nâng cao</span><b>149.000đ</b></div><div id="tagPriceRow" hidden><span>Thẻ tên cá nhân hóa</span><b>69.000đ</b></div><div><span>Vận chuyển</span><b class="green">Miễn phí</b></div><hr><div class="total"><span>Tổng cộng</span><b id="customTotal">1.748.000đ</b></div></div>
