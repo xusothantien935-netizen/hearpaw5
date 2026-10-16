@@ -277,6 +277,14 @@ html{scroll-behavior:smooth;scroll-padding-top:100px}body{background:#fffefa;col
   border-radius: 50%;
   background: #d4d8ce;
 }
+.custom-gallery-dots span {
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.custom-gallery-dots span.active {
+  background: #42684a;
+  transform: scale(1.3);
+}
 
 .custom-gallery-dots span.active {
   background: #42684a;
