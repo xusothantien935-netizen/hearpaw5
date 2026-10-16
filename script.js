@@ -60,11 +60,11 @@
   // Product catalogue: selecting a colour swaps the actual product preview image.
   const catalogue = {
     collar1:{name:'Vòng cổ thông minh - vải',price:1599000,kind:'collar',caption:'HEARPAW SMART COLLAR · FABRIC',description:'Vòng cổ thông minh chất liệu vải mềm, thiết kế tối giản và dễ phối màu.',colors:[['Xanh lá đậm','#42684A','moss'],['Be kem','#F5F0E6','beige'],['Hồng pastel','#F3C3CD','pink'],['Tím lavender','#C7B5E2','lavender'],["Xanh biển", "#4A90C6", "blue"]]},
-    collar2:{name:'Vòng cổ thông minh Gen2',price:1799000,kind:'collar',caption:'HEARPAW SMART COLLAR · GEN 2',description:'Thế hệ vòng cổ thông minh mới với kiểu dáng hiện đại và màu sắc nổi bật.',colors:[['Xanh lá đậm','#42684A','moss'],['Be','#E8DCC7','beige'],['Cam','#E98548','orange']]},
+    collar2:{name:'Vòng cổ thông minh Gen2',price:1799000,kind:'collar',caption:'HEARPAW SMART COLLAR · GEN 2',description:'Thế hệ vòng cổ thông minh mới với kiểu dáng hiện đại và màu sắc nổi bật.',colors:[['Xanh lá đậm','#42684A','moss'],['Be','#E8DCC7','beige'],['Cam','#E98548','orange'],['Đỏ','#B84443','red']]},
     leash1:{name:'Dây dắt thú cưng - vải mềm',price:129000,kind:'leash',caption:'HEARPAW SOFT FABRIC LEASH',description:'Dây dắt vải mềm, dễ cầm nắm, phù hợp cho những buổi dạo chơi mỗi ngày.',colors:[['Xanh lá đậm','#42684A','green'],['Vàng bơ','#E8D77D','butter'],['Hồng','#F0AFC0','pink'],['Xanh da trời','#8EC7E7','sky']],length:true},
     leash2:{name:'Dây dắt thú cưng - da mềm',price:179000,kind:'leash',caption:'HEARPAW SOFT LEATHER LEASH',description:'Dây dắt da mềm với bề mặt mịn và chi tiết kim loại thanh lịch.',colors:[['Xanh lá đậm','#42684A','green'],['Vàng bơ','#E8D77D','butter'],['Đỏ','#B84443','red']],length:true},
     tag1:{name:'Thẻ tên thú cưng cá nhân hóa - Kiểu Xương',price:69000,kind:'bone',caption:'PERSONALIZED PET TAG · BONE',description:'Thẻ tên hình xương có thể cá nhân hóa tên bé, giúp nhận diện dễ dàng.',colors:[['Bạc','#C5CBD0','silver'],['Hồng','#E7A7B7','pink']]},
-    tag2:{name:'Thẻ tên thú cưng cá nhân hóa - Kiểu Tròn',price:69000,kind:'round',caption:'PERSONALIZED PET TAG · ROUND',description:'Thẻ tên hình tròn nhỏ gọn, tinh tế và phù hợp với nhiều loại vòng cổ.',colors:[['Bạc','#C5CBD0','silver'],['Hồng','#E7A7B7','pink']]}
+    tag2:{name:'Thẻ tên thú cưng cá nhân hóa - Kiểu Tròn',price:69000,kind:'round',caption:'PERSONALIZED PET TAG · ROUND',description:'Thẻ tên hình tròn nhỏ gọn, tinh tế và phù hợp với nhiều loại vòng cổ.',colors:[['Bạc','#C5CBD0','silver'],['Hồng','#E7A7B7','pink'],['Vàng champagne','#D6BD8A','gold']]}
   };
   let activeProductId='collar1', activeColorIndex=0, selectedProductSize='M';
   const money = value => `${value.toLocaleString('vi-VN')}đ`;
